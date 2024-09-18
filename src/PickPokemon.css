@@ -1,0 +1,71 @@
+.pokemon-list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.pokemon-pick {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    border: 2px solid #9b9b9b;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.types {
+    display: flex;
+    column-gap: 1em;
+    justify-content: center;
+}
+
+.attack {
+    border: 2px solid #9b9b9b;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+        
+.attack > .name { grid-area: 1 / 1 / 2 / 2; }
+.attack > .categoty { grid-area: 2 / 1 / 3 / 2; }
+.attack > .power { grid-area: 1 / 2 / 3 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-Fire {
+    background-color: var(--type-fire);
+}
+.type-Water {
+    background-color: var(--type-water);
+}
+.type-Electric {
+    background-color: var(--type-electric);
+}
+.type-Bug {
+    background-color: var(--type-bug);
+}
+.type-Rock {
+    background-color: var(--type-rock);
+}
+.type-Normal {
+    background-color: var(--type-normal);
+}
+.type-Ice {
+    background-color: var(--type-ice);
+}
+.type-Flying {
+    background-color: var(--type-flying);
+}
+.type-Poison {
+    background-color: var(--type-poison);
+}
+.type-Ground {
+    background-color: var(--type-ground);
+}
+.type-Fighting {
+    background-color: var(--type-fighting);
+}
